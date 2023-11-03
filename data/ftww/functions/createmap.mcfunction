@@ -1,0 +1,4 @@
+tag @s remove FTWW_PlacingMap
+tellraw @a[scores={FTWW_createmap=1}] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n----Create Map----\n","color":"yellow","bold":true},{"text":"Place Preset Map\n","color":"yellow","bold":false,"clickEvent":{"action":"run_command","value":"/function ftww:placepresetmap"}},{"text":"Create Own Map","color":"gray","bold":false,"hoverEvent":{"action":"show_text","value":[{"text":"Coming Soon","color":"red","bold":true}]}},{"text":"\n------------------","bold":true,"hoverEvent":{"action":"show_text","value":[{"text":"","color":"red","bold":true}]}}]
+tag @a[scores={FTWW_createmap=1..}] add FTWW_PlacingMap
+scoreboard players reset @a[scores={FTWW_createmap=1..}] FTWW_createmap

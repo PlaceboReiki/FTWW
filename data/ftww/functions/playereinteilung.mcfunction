@@ -1,0 +1,43 @@
+execute as @a at @e[type=armor_stand,tag=FTWW_LOBBYC] if entity @s[distance=..4.0] unless entity @s[tag=FTWW_Invsaved] run tag @s add nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P1] run tag @s add FTWW_P1
+execute as @a if entity @s[tag=FTWW_P1] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P2] run tag @s add FTWW_P2
+execute as @a if entity @s[tag=FTWW_P2] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P3] run tag @s add FTWW_P3
+execute as @a if entity @s[tag=FTWW_P3] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P4] run tag @s add FTWW_P4
+execute as @a if entity @s[tag=FTWW_P4] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P5] run tag @s add FTWW_P5
+execute as @a if entity @s[tag=FTWW_P5] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P5] run tag @s add FTWW_P6
+execute as @a if entity @s[tag=FTWW_P6] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P7] run tag @s add FTWW_P7
+execute as @a if entity @s[tag=FTWW_P7] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P8] run tag @s add FTWW_P8
+execute as @a if entity @s[tag=FTWW_P8] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P9] run tag @s add FTWW_P9
+execute as @a if entity @s[tag=FTWW_P9] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P10] run tag @s add FTWW_P10
+execute as @a if entity @s[tag=FTWW_P10] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P11] run tag @s add FTWW_P11
+execute as @a if entity @s[tag=FTWW_P11] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P12] run tag @s add FTWW_P12
+execute as @a if entity @s[tag=FTWW_P12] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P13] run tag @s add FTWW_P13
+execute as @a if entity @s[tag=FTWW_P13] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P14] run tag @s add FTWW_P14
+execute as @a if entity @s[tag=FTWW_P14] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P15] run tag @s add FTWW_P15
+execute as @a if entity @s[tag=FTWW_P15] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P16] run tag @s add FTWW_P16
+execute as @a if entity @s[tag=FTWW_P16] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P17] run tag @s add FTWW_P17
+execute as @a if entity @s[tag=FTWW_P17] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P18] run tag @s add FTWW_P18
+execute as @a if entity @s[tag=FTWW_P18] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P19] run tag @s add FTWW_P19
+execute as @a if entity @s[tag=FTWW_P19] run tag @s remove nrneeded
+execute as @a[tag=nrneeded] unless entity @a[tag=FTWW_P20] run tag @s add FTWW_P20
+execute as @a if entity @s[tag=FTWW_P20] run tag @s remove nrneeded
+execute as @a[tag=FTWW_Invsaved] at @e[type=armor_stand,tag=FTWW_LOBBYD] run tag @s[distance=..1.5] add FTWW_Invrestore
+execute at @e[type=armor_stand,tag=FTWW_LOBBYC] run tag @a[tag=!FTWW_Ingame,distance=6..,tag=FTWW_Invsaved] add FTWW_Invrestore
